@@ -1,0 +1,34 @@
+<!-- Assignment- Create an electron app for simple calculator ( it’s not an scientific calculator )
+The whole calculations should happen in backend not in the UI side JS
+
+Also write all the logs in the files -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" placeholder="Result" readonly>
+    <input type="number" id="num1" placeholder="Enter number">
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" id="num2" placeholder="Enter number">
+    <div>
+      <button id="btnCalculate">Calculate</button>
+      <button id="btnContinue">Continue with Last Result</button>
+      <button id="btnClear">Clear</button>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
