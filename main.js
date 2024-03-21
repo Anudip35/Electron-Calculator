@@ -54,7 +54,7 @@ app.on("window-all-closed", function () {
   if (process.platform !== "darwin") app.quit();
 });
 
-const logFilePath = path.join(__dirname, "logs", "calculation_log.txt");
+const logFilePath = path.join(app.getPath("userData"), "calculation_log.txt");
 
 logOperation = async (operation) => {
   const timestamp = new Date().toLocaleString();
